@@ -71,7 +71,7 @@
 </button>
 <div class="collapse navbar-collapse border-top-custom" id="navbarSupportedContent">
 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5">
-<li class="nav-item"><a class="nav-link active" href="#">Acceuil</a></li>
+<li class="nav-item"><a class="nav-link active" href="{{route('acceuil')}}">Acceuil</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Publications</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Galérie</a></li>
 <li class="nav-item"><a class="nav-link" href="#">A_propos</a></li>
@@ -98,21 +98,20 @@
 </h2>
 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 <ul class="ftco-footer-social list-unstyled mt-2">
-<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-<li><a href="#"><span class="fa fa-instagram"></span></a></li>
+<li><a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a></li>
+<li><a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a></li>
+<li><a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a></li>
 </ul>
 </div>
 </div>
 <div class="col-md-6 col-lg-2">
 <div class="ftco-footer-widget mb-4">
-<h2 class="ftco-heading-2">Explore</h2>
+<h2 class="ftco-heading-2">Liens utiles</h2>
 <ul class="list-unstyled">
-<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>About Us</a></li>
-<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>Trainers Team</a></li>
-<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>Awesome Classes</a></li>
-<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>Pricing Packages</a></li>
-<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>Latest News</a></li>
+<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>A propos</a></li>
+<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>Publications</a></li>
+<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>Galerie</a></li>
+<li><a href="#"><span class="fa ion-ios-arrow-round-forward me-3"></span>Terms</a></li>
 </ul>
 </div>
 </div>
