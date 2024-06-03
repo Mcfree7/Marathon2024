@@ -194,12 +194,14 @@
 <div class="item">
     <div class="card">
     @if($firstImages[$key])
-      <img src="{{ asset('../article_images/' . $firstImages[$key]->path) }}" class="card-img-top" alt="...">
+      <a href="{{route('article.detail' ,$art->id)}}"><img src="{{ asset('../article_images/' . $firstImages[$key]->path) }}" class="card-img-top" alt="..."></a>
     @endif
-      <div class="card-body">
-        <h5 class="card-title">{{ucwords(strtolower(substr($art->Titre,0,25)))}}</h5>
-        <p class="card-text">{{ucwords(strtolower(substr($art->Contenu,0,25)))}}</p>
-      </div>
+        <a href="{{route('article.detail' ,$art->id)}}">
+        <div class="card-body">
+        <h5 class="card-title">{{ucwords(strtolower(substr($art->Titre,0,25)))}} ...</h5>
+        <p class="card-text">{{ucwords(strtolower(substr($art->Contenu,0,25)))}} ...</p>
+        </div>
+        </a>
     </div>
 </div>
 @endforeach

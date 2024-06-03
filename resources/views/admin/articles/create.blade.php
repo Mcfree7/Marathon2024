@@ -42,7 +42,11 @@
         </div>
     @endif
 <div class="col-sm-10">
-
+    @if ($message = Session::get('success'))
+        <div class="alert alert-success alert-block">
+                <strong>{{ $message }}</strong>
+        </div>
+    @endif
     <div class="card">
     <div class="card-header">
     <h5>Céer un article</h5>

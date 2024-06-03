@@ -24,16 +24,18 @@ Route::get('/',[AcceuilController::class, 'index'])->name('acceuil');
 Route::resource('inscription', InscriptionController::class);
 
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//Route pour Articles
+Route::get('/all_articles',[ArticleController::class, 'affiche'])->name('article.affiche');
+Route::get('article_detail/{article}', [ArticleController::class, 'detail'])->name('article.detail');
+
 Route::group(['middleware' => ['auth']], function () {
 
     Route::resource('article', ArticleController::class);
-    Route::get('articles/{articleId}/upload', [ArticleImageController::class, 'index']);
-    Route::post('articles/{articleId}/upload', [ArticleImageController::class, 'store'])->name('imagestore');
-    Route::get('article-image/{articleImageId}/delete', [ArticleImageController::class, 'destroy'])->name('imagedestroy');
 
 });
 

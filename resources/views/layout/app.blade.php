@@ -10,7 +10,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.10-0/css/ionicons.min.css">
 <link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
@@ -72,7 +78,7 @@
 <div class="collapse navbar-collapse border-top-custom" id="navbarSupportedContent">
 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5">
 <li class="nav-item"><a class="nav-link active" href="{{route('acceuil')}}">Acceuil</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Publications</a></li>
+<li class="nav-item"><a class="nav-link" href="{{route('article.affiche')}}">Publications</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Galérie</a></li>
 <li class="nav-item"><a class="nav-link" href="#">A_propos</a></li>
 <li class="nav-item"><a class="nav-link" href="#">News</a></li>
