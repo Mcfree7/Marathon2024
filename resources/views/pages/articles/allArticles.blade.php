@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/acceuil/bg3.jpg');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('images/acceuil/bg2.jpg');">
 <div class="overlay"></div>
 <div class="container">
 <div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -20,7 +20,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
 @foreach ($articles as $key => $art)
     <div class="col-md-4 mb-4">
-    <div class="card">
+    <div class="card">  
     @if($firstImages[$key])
       <a href="{{route('article.detail' ,$art->id)}}"><img src="{{ asset('../article_images/' . $firstImages[$key]->path) }}" class="card-img-top" alt="..."></a>
     @endif

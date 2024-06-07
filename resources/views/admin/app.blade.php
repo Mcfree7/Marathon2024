@@ -44,7 +44,7 @@
     <a href="{{ route('acceuil') }}"> Marathon
     <img class="img-fluid" src="{{asset('../images/logo.png')}}" style="width: 125px;height:85px" alt="Theme-Logo" />
     </a>
-    <a class="mobile-menu" id="mobile-collapse" href="#!">
+    <a class="mobile-menu" id="mobile-collapse" href="{{ route('home') }}">
     <i class="feather icon-menu icon-toggle-right"></i>
     </a>
     <a class="mobile-options waves-effect waves-light">
@@ -96,13 +96,13 @@
     <div class="pcoded-navigation-label">Navigation</div>
     <ul class="pcoded-item pcoded-left-item">
     <li class="pcoded-hasmenu active pcoded-trigger">
-    <a href="javascript:void(0)" class="waves-effect waves-dark">
+    <a href="{{ route('home')}}" class="waves-effect waves-dark">
     <span class="pcoded-micon"><i class="feather icon-home"></i></span>
     <span class="pcoded-mtext">Menu</span>
     </a>
     <ul class="pcoded-submenu">
     <li class="active">
-    <a href="#" class="waves-effect waves-dark">
+    <a href="{{ route('home')}}" class="waves-effect waves-dark">
     <span class="pcoded-mtext">Acceuil</span>
     </a>
     </li>
@@ -190,12 +190,12 @@
             </a>
             <ul class="pcoded-submenu">
             <li class=" ">
-            <a href="" class="waves-effect waves-dark">
+            <a href="{{route('galerie.create')}}" class="waves-effect waves-dark">
             <span class="pcoded-mtext">Créer un nouveau</span>
             </a>
             </li>
             <li class=" ">
-            <a href="" class="waves-effect waves-dark">
+            <a href="{{route('galerie.index')}}" class="waves-effect waves-dark">
             <span class="pcoded-mtext">Afficher</span>
             </a>
             </li>

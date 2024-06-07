@@ -53,10 +53,10 @@ class ArticleController extends Controller
             
         ]));
         $article = new Article();
-            $article->Titre = $request->titre;
-            $article->Contenu = $request->contenu;
-            $article->Date = $request->date;
-            $article->save();
+        $article->Titre = $request->titre;
+        $article->Contenu = $request->contenu;
+        $article->Date = $request->date;
+        $article->save();
 
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {

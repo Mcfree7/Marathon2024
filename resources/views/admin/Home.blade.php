@@ -11,7 +11,7 @@
         <i class="feather icon-home bg-c-blue"></i>
         <div class="d-inline">
         <h5>Acceuil</h5>
-        <span>Bienvenue sur le panneau d'administration du CDJS  </span>
+        <span>Bienvenue sur le panneau d'administration du site du Marathon  </span>
         </div>
         </div>
         </div>
@@ -29,17 +29,17 @@
         </div>
     </div>
   <center><div class="container col-md-9 mr-5 p-5">
-
+  <h2><span>Bienvenue sur le panneau d'administration du site du Marathon </span></h2>
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/images/blog/act_jeunes.jpg" class="d-block w-100" alt="...">
+      <img src="{{asset('images/acceuil/bg1.jpg')}}" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assets/images/blog/act_volontariat.jpg" class="d-block w-100" alt="...">
+      <img src="{{asset('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assets/images/service/serv8.jpg" class="d-block w-100" alt="...">
+      <img src="{{asset('images/acceuil/bg3.jpg')}}" class="d-block w-100" alt="...">
     </div>
   </div>
 </div>

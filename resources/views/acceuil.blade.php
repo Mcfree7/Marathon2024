@@ -80,9 +80,9 @@
 <h2 class="mb-4">ABUJA <span>Marathon</span></h2>
 <p>le marathon, est un, évènement sportif organisé annuellement par le CDJS/CEDEAO avec l'appui de la Commission de la CEDEAO. Son but est de promouvoir l'intégration régionale avec à la clé le sport comme outil de mobilisation pour le rassemblement des peuples.</p>
 <ul>
-<li><a href="#"><span class="ion-ios-arrow-round-forward"></span> Catégorie 5km </a></li>
-<li><a href="#"><span class="ion-ios-arrow-round-forward"></span> Catégorie 10km</a></li>
-<li><a href="#"><span class="ion-ios-arrow-round-forward"></span> Catégorie 20km</a></li>
+<li><a href="#"><span class="ion-ios-arrow-round-forward"><i class="fas fa-arrow-right"></i></span> Catégorie 5km </a></li>
+<li><a href="#"><span class="ion-ios-arrow-round-forward"><i class="fas fa-arrow-right"></i></span> Catégorie 10km</a></li>
+<li><a href="#"><span class="ion-ios-arrow-round-forward"><i class="fas fa-arrow-right"></i></span> Catégorie 20km</a></li>
 </ul>
 </div>
 </div>
@@ -103,77 +103,23 @@
 <h2 class="mb-3"><span>Galérie</span> du Marathon</h2>
 </div>
 </div>
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            
-                <div class="carousel-item active">
-                    <div class="row">
-                        
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                            
-                       
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <div class="row">
-                        
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                       
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <div class="row">
-                        
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                       
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <div class="row">
-                        
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="{{url('images/acceuil/bg2.jpg')}}" class="d-block w-100" alt="Image de l'article">
-                            </div>
-                       
-                    </div>
-                </div>
-                   
-                </div>
-          
-        </div>
+<div class="row g-lg-2">   
+@foreach ($galeries as $key => $gal )
+    <div class="col-md-4" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+@if ($firstImgs[$key])
+    <div class="classes-wrap img d-flex align-items-end" style="background-image: url({{ asset('../galerie_images/' . $firstImgs[$key]->path) }});">
+    <div class="text">
+    <span class="price">{{$gal->Date}}</span>
+    <h2><a href="#">{{ucwords(strtolower(substr($gal->Titre,0,15)))}} ...</a></h2>
     </div>
-
+    </div>
+@endif
+</div>
+@endforeach
 </div>
 <div class="row mt-md-5">
 <div class="col text-center">
-<a href="#" class="btn-custom">Voir plus d'images<span class="ion-ios-arrow-round-forward"></span></a>
+<a href="{{route('galerie.affiche')}}" class="btn-custom">Voir plus d'images<i class="fas fa-arrow-right"></i></a>
 </div>
 </div>
 </div>
@@ -205,6 +151,11 @@
     </div>
 </div>
 @endforeach
+</div>
+<div class="row mt-md-5">
+<div class="col text-center">
+<a href="{{route('article.affiche')}}" class="btn-custom">Voir plus d'articles<i class="fas fa-arrow-right"></i></a>
+</div>
 </div>
 </div>
 </div>

@@ -8,7 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
  <!-- Bootstrap css  -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.0-0/css/ionicons.min.css" rel="stylesheet">
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -79,7 +80,7 @@
 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5">
 <li class="nav-item"><a class="nav-link active" href="{{route('acceuil')}}">Acceuil</a></li>
 <li class="nav-item"><a class="nav-link" href="{{route('article.affiche')}}">Publications</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Galérie</a></li>
+<li class="nav-item"><a class="nav-link" href="{{route('galerie.affiche')}}">Galérie</a></li>
 <li class="nav-item"><a class="nav-link" href="#">A_propos</a></li>
 <li class="nav-item"><a class="nav-link" href="#">News</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
